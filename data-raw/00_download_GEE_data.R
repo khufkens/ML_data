@@ -62,6 +62,6 @@ all_data <- lapply(bundles, function(bundle){
 names(all_data) <- bundles
 
 # save as a serialized object
-saveRDS(all_data, "data/remote_sensing_data.rda")
+saveRDS(all_data, "data/remote_sensing_data.rda", compress = "xz")
 
 
